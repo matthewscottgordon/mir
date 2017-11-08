@@ -191,7 +191,7 @@ set(
 
 list(GET MIR_PLATFORM 0 MIR_TEST_PLATFORM)
 
-option(MIR_ENABLE_TESTS "Build tests" OFF)
+option(MIR_ENABLE_TESTS "Build tests" ON)
 
 foreach(platform IN LISTS MIR_PLATFORM)
   if (platform STREQUAL "mesa-kms")

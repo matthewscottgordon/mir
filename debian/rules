@@ -93,3 +93,6 @@ override_dh_shlibdeps:
 override_dh_gencontrol:
 	dh_gencontrol -Nlibmiral2 -Nlibmiral-dev
 	dh_gencontrol -plibmiral2 -plibmiral-dev -- -v$(MIRAL_VERSION) -V'libmiral2:Version=$(MIRAL_VERSION)'
+
+override_dh_auto_test:
+	echo "Testsuite disabled for LP recipe build."
